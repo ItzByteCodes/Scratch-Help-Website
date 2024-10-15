@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scratch Help Center</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background: #4A90E2;
+            color: white;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background: url('https://source.unsplash.com/1600x900/?coding,scratch') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            margin: 0 0 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+        }
+
+        .btn {
+            background: #FF6F61;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #e65c50;
+        }
+
+        .section {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .services, .testimonials {
+            background: #f9f9f9;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        footer {
+            background: #4A90E2;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        form input, form textarea {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            align-self: flex-start;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Scratch Help Center</h1>
+    <nav>
+        <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="hero">
+    <h2>Master Scratch Programming</h2>
+    <p>Your journey to coding success starts here.</p>
+    <button class="btn">Get Started</button>
+</div>
+
+<section id="services" class="section services">
+    <h2>Our Services</h2>
+    <div class="container">
+        <div class="card">
+            <h3>Tutorials</h3>
+            <p>Step-by-step tutorials on how to create your first Scratch project and explore the basics of coding.</p>
+        </div>
+        <div class="card">
+            <h3>Project Feedback</h3>
+            <p>Get personalized feedback on your Scratch projects to enhance your skills and creativity.</p>
+        </div>
+        <div class="card">
+            <h3>Classroom Resources</h3>
+            <p>Access a variety of resources tailored for educators to teach Scratch effectively in the classroom.</p>
+        </div>
+    </div>
+</section>
+
+<section id="testimonials" class="section testimonials">
+    <h2>What Our Clients Say</h2>
+    <div class="container">
+        <div class="card">
+            <p>"This help center transformed my understanding of Scratch!" - Happy Learner</p>
+        </div>
+        <div class="card">
+            <p>"The tutorials were straightforward and easy to follow." - Satisfied Student</p>
+        </div>
+        <div class="card">
+            <p>"A fantastic resource for both students and teachers!" - Loyal Educator</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button class="btn" type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2023 Scratch Help Center. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
